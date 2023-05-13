@@ -159,7 +159,7 @@ if is_module_loaded(FILENAME):
         else:
             message.reply_text("No log channel has been set for this group!")
 
-    @Exoncmd(command="logchannel")
+    @Exoncmd(command="setlog")
     @user_admin(AdminPerms.CAN_CHANGE_INFO)
     def setlog(update: Update, context: CallbackContext):
         bot = context.bot
@@ -316,13 +316,8 @@ __mod_name__ = "𝐋ᴏɢs "
 
 # ғᴏʀ ʜᴇʟᴘ ᴍᴇɴᴜ
 
-
-# """
 from Exon.modules.language import gs
 
 
 def get_help(chat):
     return gs(chat, "log_help")
-
-
-# """
